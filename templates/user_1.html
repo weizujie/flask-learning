@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href={{url_for('static', filename="css.css")}} type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Hello, {{ name|capitalize }}! # capitalize过滤器</h1>
+
+{% if name and name == 'admin' %}
+    <p>This is admin console!</p>
+{% elif name %}
+    <h1>Hello {{ name }}!</h1>
+{% else %}
+    <h1>Please login!</h1>>
+{% endif %}
+
+</body>
+</html>

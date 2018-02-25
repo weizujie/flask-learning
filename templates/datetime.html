@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+
+<p>当前时间：{{moment(current_time).format('YYYY年M月D日, h:mm:ss a')}}</p>
+<p>初始化访问时间:{{moment(current_time).fromNow(refresh=True)}}</p>
+
+{% endblock %}
