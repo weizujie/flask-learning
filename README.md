@@ -4,5 +4,5 @@
 
 # 用法
 ```
-$ python hello,py runserver 
+$ python hello.py runserver 
 ```
