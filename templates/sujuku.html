@@ -6,7 +6,12 @@
 {% block page_content %}
 <div class="page-header">
      <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
-     <!-- 如果条件为True，那么渲染if和else指令之间的值；如果为False则渲染else和endif之间的值 -->
+
+    {% if not known %}
+    <p>Please to meet you!</p>
+    {% else %}
+    <p>Happy to see you again!</p>
+    {% endif %}
 </div>
-{{ wtf.quick_form(form) }} <!-- 使用wtf.quick_form()函数渲染NameForm对象 -->
+{{ wtf.quick_form(form) }}
 {% endblock %}
