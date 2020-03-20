@@ -1,8 +1,9 @@
-# FirstFlask
+# Flask-Learning
 
-按照狗书来写的，贼粗糙.....
+# References
+《Flask Web Development: Developing Web Applications with Python》
 
-# 用法
+# Usage
 ```
 $ python hello.py runserver 
 ```
